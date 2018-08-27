@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">More Than Words</string>
+    <string name="dummy_content">MORE THAN\nWORDS</string>
+    <string name="footer">2018</string>
 </resources>
