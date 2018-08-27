@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:foregroundGravity="center"
+    tools:context=".WordsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_know"
+            style="@android:style/ButtonBar"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorCorrect"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="UMIEM"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_notknow"
+            style="@android:style/ButtonBar"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/colorWrong"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="NIE UMIEM"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+
+
+
+            <FrameLayout
+                android:id="@+id/backCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:onClick="flipCard">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="352dp"
+                    android:layout_height="128dp"
+                    android:padding="16dp"
+                    android:src="@drawable/rectangle"
+                    android:tint="@color/cardBack" />
+
+
+                <TextView
+                    android:id="@+id/textBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="WARM"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frontCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:foregroundGravity="center"
+                android:onClick="flipCard">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="352dp"
+                    android:layout_height="128dp"
+                    android:padding="16dp"
+                    android:src="@drawable/rectangle"
+                    android:tint="@color/cardFront" />
+
+                <TextView
+                    android:id="@+id/textFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="CIEPŁO"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+            </FrameLayout>
+
+</FrameLayout>

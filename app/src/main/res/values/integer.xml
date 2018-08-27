@@ -2,7 +2,4 @@
 <resources>
     <integer name="animation_length">600</integer>
     <integer name="animation_length_half">300</integer>
-
-
-
 </resources>

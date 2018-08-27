@@ -8,6 +8,8 @@
     <color name="cardFront">#25B1F2</color>
     <color name="cardBack">#257BF0</color>
 
+    <color name="white">#FFFFFF</color>
+
     <color name="colorCorrect">#E62401</color>
     <color name="colorWrong">#6AC341</color>
 </resources>
