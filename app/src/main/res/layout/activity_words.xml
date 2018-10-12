@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:background="@color/white"
     android:foregroundGravity="center"
-    tools:context=".WordsActivity">
+    tools:context=".DefinitionActivity">
 
 
     <LinearLayout

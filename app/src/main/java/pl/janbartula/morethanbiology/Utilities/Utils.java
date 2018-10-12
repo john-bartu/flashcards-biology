@@ -1,4 +1,4 @@
-package pl.janbartula.morethanwords.Utilities;
+package pl.janbartula.morethanbiology.Utilities;
 import android.os.Handler;
 
 public class Utils {

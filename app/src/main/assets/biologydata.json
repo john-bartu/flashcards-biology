@@ -1,0 +1,99 @@
+{
+"DATA":[
+  {
+    "ID": 1,
+    "FRONT": "Abiotyczne czynniki",
+    "BACK": "Czynniki %u015Brodowiska nieo%u017Cywonego wp%u0142ywaj%u0105ce na organizm."
+  },
+  {
+    "ID": 2,
+    "FRONT": "Abscysynowy kwas",
+    "BACK": "Hormon ro%u015Blinny wywo%u0142uj%u0105cy stan spoczynku nasion, a tak%u017Ce uczestnicz%u0105cy w reakcjach na stresy."
+  },
+  {
+    "ID": 3,
+    "FRONT": "Absorbcja",
+    "BACK": "(1):Wch%u0142anianie substancji od%u017Cywczych i innych zwi%u0105zków przez %u015Bcian%u0119 przewodu pokarmowego, naczynia krwiono%u015Bnego lub limfatycznego;\n(2):Poch%u0142anianie przez chlorofil %u015Bwiat%u0142a s%u0142onecznego podczas fotosyntezy."
+  },
+  {
+    "ID": 4,
+    "FRONT": "Absorpcyjne widmo",
+    "BACK": "Wykres przedstawiaj%u0105cy ilo%u015B%u0107 %u015Bwiat%u0142a o ró%u017Cnej d%u0142ugo%u015Bci fali absorbowanego podczas przechodzenia przez dan%u0105 substancj%u0119. Ka%u017Cdy rodzaj substancji ma charakterystyczne widmo."
+  },
+  {
+    "ID": 5,
+    "FRONT": "Acetylocholina",
+    "BACK": "Neuroprzeka%u017Anik uwalniany przez neurony cholinergiczne, m.in. neurony motoryczne (ruchowe)."
+  },
+  {
+    "ID": 6,
+    "FRONT": "Acetylokoenzym A",
+    "BACK": "Zwiazek w przemianach metabolicznych z%u0142o%u017Cony z dwuw%u0119glowej grupy acetylowej po%u0142%u0105czonej kowalencyjnie z koenzymem A."
+  },
+  {
+    "ID": 7,
+    "FRONT": "Acetylowa grupa",
+    "BACK": "Dwuw%u0119glowa grupa b%u0119d%u0105ca reszt%u0105 kwasu octowego (octanu)."
+  },
+  {
+    "ID": 8,
+    "FRONT": "Adaptacja",
+    "BACK": "Zmiana ewolucyjna zwi%u0119kszaj%u0105ca szanse organizmu na prze%u017Cycie i wydanie potomstwa w danym %u015Brodowisku."
+  },
+  {
+    "ID": 9,
+    "FRONT": "Odporno%u015B%u0107 swoista",
+    "BACK": "Odporno%u015B%u0107 adaptacyjna (nabyta)"
+  },
+  {
+    "ID": 10,
+    "FRONT": "Adenina",
+    "BACK": "Zasada purynowa wchodz%u0105ca w sk%u0142ad kwasów nukleidowych i ATP"
+  },
+  {
+    "ID": 11,
+    "FRONT": "Adenozynotrifosforan  (ATP)",
+    "BACK": "Zwi%u0105zek organiczny zbudowany z adeniny, rybozy i trzech reszt kwasu fosforowego: jest g%u0142ównym no%u015Bnikiem energii w komórkach."
+  },
+  {
+    "ID": 12,
+    "FRONT": "ADH",
+    "BACK": "Hormon antydiuretyczny"
+  },
+  {
+    "ID": 13,
+    "FRONT": "Adhezja",
+    "BACK": "Zdolno%u015B%u0107 %u0142%u0105czenia si%u0119 powierzchniami dwóch ró%u017Cnych cia%u0142 zetkni%u0119tych ze sob%u0105."
+  },
+  {
+    "ID": 14,
+    "FRONT": "Adrenalina (epinefryna)",
+    "BACK": "Hormon wytwarzany przez rdze%u0144 nadnerczy: stymuluje wspó%u0142czulny uk%u0142ad nerwowy."
+  },
+  {
+    "ID": 15,
+    "FRONT": "Adrenergiczny neuron",
+    "BACK": "Neuron wydzielaj%u0105cy neuroprzeka%u017Aniki: adrenalin%u0119 lub noradrenalin%u0119."
+  },
+  {
+    "ID": 16,
+    "FRONT": "AIDS",
+    "BACK": "Zespó%u0142 nabytego niedoboru odporno%u015B%u0107, droga zakarzenia: przez krew oraz przez kontakt p%u0142ciowy z osob%u0105 zara%u017Con%u0105."
+  },
+  {
+    "ID": 17,
+    "FRONT": "Alklimatyzacja",
+    "BACK": "Przystosowanie do zmian sezonowych."
+  },
+  {
+    "ID": 18,
+    "FRONT": "Akromegalia",
+    "BACK": "Choroba objawiaj%u0105ca si%u0119 m.in. przerostem ko%u0144czyn, palców, %u017Cuchwy, nosa. Jej przyczyn%u0105 jest nadmierne wydzielanie hormonu wzrostu przez przedni p%u0142at przysadki."
+  },
+  {
+    "ID": 19,
+    "FRONT": "Reakcja akrosomowa",
+    "BACK": "Proces, w wyniku którego akrosom, stuktura w postaci czapeczki w szczytowej cz%u0119%u015Bci g%u0142ówki plemnika"
+  }
+]
+}

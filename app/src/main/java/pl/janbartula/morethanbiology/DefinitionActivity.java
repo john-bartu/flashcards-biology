@@ -1,4 +1,4 @@
-package pl.janbartula.morethanwords;
+package pl.janbartula.morethanbiology;
 
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import pl.janbartula.morethanwords.Utilities.Utils;
+import pl.janbartula.morethanbiology.Utilities.Utils;
 
-public class WordsActivity extends AppCompatActivity
+public class DefinitionActivity extends AppCompatActivity
 {
     private AnimatorSet animRightDisappear;
     private AnimatorSet animLeftAppear;

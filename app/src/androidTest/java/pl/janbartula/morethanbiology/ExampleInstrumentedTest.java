@@ -1,4 +1,4 @@
-package pl.janbartula.morethanwords;
+package pl.janbartula.morethanbiology;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("pl.janbartula.morethanwords", appContext.getPackageName());
+        assertEquals("pl.janbartula.morethanbiology", appContext.getPackageName());
     }
 }

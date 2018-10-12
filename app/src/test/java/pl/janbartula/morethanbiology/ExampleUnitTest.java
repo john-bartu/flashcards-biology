@@ -1,4 +1,4 @@
-package pl.janbartula.morethanwords;
+package pl.janbartula.morethanbiology;
 
 import org.junit.Test;
 
