@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/white"
+    android:background="@color/background"
     android:foregroundGravity="center"
     tools:context=".DefinitionActivity">
 
@@ -17,31 +17,15 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button_know"
+            android:id="@+id/button_next"
             style="@android:style/ButtonBar"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="72dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@color/colorCorrect"
             android:foregroundGravity="center"
             android:gravity="center"
-            android:text="UMIEM"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
-
-        <Button
-            android:id="@+id/button_notknow"
-            style="@android:style/ButtonBar"
-            android:layout_width="wrap_content"
-            android:layout_height="72dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:background="@color/colorWrong"
-            android:foregroundGravity="center"
-            android:gravity="center"
-            android:text="NIE UMIEM"
+            android:text="Następny"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp" />
@@ -62,21 +46,22 @@
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="352dp"
-                    android:layout_height="128dp"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
                     android:padding="16dp"
                     android:src="@drawable/rectangle"
                     android:tint="@color/cardBack" />
 
 
                 <TextView
-                    android:id="@+id/textBack"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="WARM"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="36sp" />
+                        android:id="@+id/textBack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="WARM"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" android:layout_margin="32dp"/>
             </FrameLayout>
 
             <FrameLayout
@@ -90,20 +75,21 @@
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="352dp"
-                    android:layout_height="128dp"
+                    android:layout_height="400dp"
+                    android:layout_gravity="center"
                     android:padding="16dp"
                     android:src="@drawable/rectangle"
                     android:tint="@color/cardFront" />
 
                 <TextView
-                    android:id="@+id/textFront"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="CIEPŁO"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="36sp" />
+                        android:id="@+id/textFront"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="dlugi text dlugi text dlugi text dlugi text dlugi text dlugi text dlugi text dlugi text  dlugi text dlugi text dlugi text dlugi text "
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" android:layout_margin="32dp"/>
 
             </FrameLayout>
 

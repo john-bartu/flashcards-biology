@@ -20,14 +20,13 @@
             android:gravity="center"
             android:keepScreenOn="true"
             android:text="@string/dummy_content"
-            android:textColor="#33b5e5"
+            android:textColor="@color/mainmenutext"
             android:textSize="50sp"
             android:textStyle="bold" />
 
         <Space
-            android:layout_width="match_parent"
-            android:layout_height="16dp"
-            android:layout_weight="0" />
+                android:layout_width="match_parent"
+                android:layout_weight="0" android:layout_height="0dp"/>
 
         <ScrollView
             android:id="@+id/scrollview"
@@ -40,20 +39,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:orientation="vertical" />
+                android:orientation="vertical" >
+                <Button
+                        android:text="Default Dataset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/defaultbutton"
+                        android:background="@color/mainmenutext"/>
+                <TextView
+                        android:id="@+id/text_footer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="@string/footer"
+                        android:textAlignment="center"
+                        android:textColor="@color/mainmenutext"
+                        android:textSize="25sp"/>
+            </LinearLayout>
         </ScrollView>
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/text_footer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:text="@string/footer"
-        android:textAlignment="center"
-        android:textColor="#33b5e5"
-        android:textSize="25sp" />
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->

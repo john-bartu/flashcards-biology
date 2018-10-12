@@ -1,59 +1,60 @@
 {
-"DATA":[
+"FLASHCARDS":
+[
   {
     "ID": 1,
     "FRONT": "Abiotyczne czynniki",
-    "BACK": "Czynniki %u015Brodowiska nieo%u017Cywonego wp%u0142ywaj%u0105ce na organizm."
+    "BACK": "Czynniki środowiska nieożywonego wpływające na organizm."
   },
   {
     "ID": 2,
     "FRONT": "Abscysynowy kwas",
-    "BACK": "Hormon ro%u015Blinny wywo%u0142uj%u0105cy stan spoczynku nasion, a tak%u017Ce uczestnicz%u0105cy w reakcjach na stresy."
+    "BACK": "Hormon roślinny wywołujący stan spoczynku nasion, a także uczestniczący w reakcjach na stresy."
   },
   {
     "ID": 3,
     "FRONT": "Absorbcja",
-    "BACK": "(1):Wch%u0142anianie substancji od%u017Cywczych i innych zwi%u0105zk�w przez %u015Bcian%u0119 przewodu pokarmowego, naczynia krwiono%u015Bnego lub limfatycznego;\n(2):Poch%u0142anianie przez chlorofil %u015Bwiat%u0142a s%u0142onecznego podczas fotosyntezy."
+    "BACK": "(1):Wchłanianie substancji odżywczych i innych związków przez ścianę przewodu pokarmowego, naczynia krwionośnego lub limfatycznego;\n(2):Pochłanianie przez chlorofil światła słonecznego podczas fotosyntezy."
   },
   {
     "ID": 4,
     "FRONT": "Absorpcyjne widmo",
-    "BACK": "Wykres przedstawiaj%u0105cy ilo%u015B%u0107 %u015Bwiat%u0142a o r�%u017Cnej d%u0142ugo%u015Bci fali absorbowanego podczas przechodzenia przez dan%u0105 substancj%u0119. Ka%u017Cdy rodzaj substancji ma charakterystyczne widmo."
+    "BACK": "Wykres przedstawiający ilość światła o różnej długości fali absorbowanego podczas przechodzenia przez daną substancję. Każdy rodzaj substancji ma charakterystyczne widmo."
   },
   {
     "ID": 5,
     "FRONT": "Acetylocholina",
-    "BACK": "Neuroprzeka%u017Anik uwalniany przez neurony cholinergiczne, m.in. neurony motoryczne (ruchowe)."
+    "BACK": "Neuroprzekaźnik uwalniany przez neurony cholinergiczne, m.in. neurony motoryczne (ruchowe)."
   },
   {
     "ID": 6,
     "FRONT": "Acetylokoenzym A",
-    "BACK": "Zwiazek w przemianach metabolicznych z%u0142o%u017Cony z dwuw%u0119glowej grupy acetylowej po%u0142%u0105czonej kowalencyjnie z koenzymem A."
+    "BACK": "Zwiazek w przemianach metabolicznych złożony z dwuwęglowej grupy acetylowej połączonej kowalencyjnie z koenzymem A."
   },
   {
     "ID": 7,
     "FRONT": "Acetylowa grupa",
-    "BACK": "Dwuw%u0119glowa grupa b%u0119d%u0105ca reszt%u0105 kwasu octowego (octanu)."
+    "BACK": "Dwuwęglowa grupa będąca resztą kwasu octowego (octanu)."
   },
   {
     "ID": 8,
     "FRONT": "Adaptacja",
-    "BACK": "Zmiana ewolucyjna zwi%u0119kszaj%u0105ca szanse organizmu na prze%u017Cycie i wydanie potomstwa w danym %u015Brodowisku."
+    "BACK": "Zmiana ewolucyjna zwiększająca szanse organizmu na przeżycie i wydanie potomstwa w danym środowisku."
   },
   {
     "ID": 9,
-    "FRONT": "Odporno%u015B%u0107 swoista",
-    "BACK": "Odporno%u015B%u0107 adaptacyjna (nabyta)"
+    "FRONT": "Odporność swoista",
+    "BACK": "Odporność adaptacyjna (nabyta)"
   },
   {
     "ID": 10,
     "FRONT": "Adenina",
-    "BACK": "Zasada purynowa wchodz%u0105ca w sk%u0142ad kwas�w nukleidowych i ATP"
+    "BACK": "Zasada purynowa wchodząca w skład kwasów nukleidowych i ATP"
   },
   {
     "ID": 11,
     "FRONT": "Adenozynotrifosforan  (ATP)",
-    "BACK": "Zwi%u0105zek organiczny zbudowany z adeniny, rybozy i trzech reszt kwasu fosforowego: jest g%u0142�wnym no%u015Bnikiem energii w kom�rkach."
+    "BACK": "Związek organiczny zbudowany z adeniny, rybozy i trzech reszt kwasu fosforowego: jest głównym nośnikiem energii w komórkach."
   },
   {
     "ID": 12,
@@ -63,22 +64,22 @@
   {
     "ID": 13,
     "FRONT": "Adhezja",
-    "BACK": "Zdolno%u015B%u0107 %u0142%u0105czenia si%u0119 powierzchniami dw�ch r�%u017Cnych cia%u0142 zetkni%u0119tych ze sob%u0105."
+    "BACK": "Zdolność łączenia się powierzchniami dwóch różnych ciał zetkniętych ze sobą."
   },
   {
     "ID": 14,
     "FRONT": "Adrenalina (epinefryna)",
-    "BACK": "Hormon wytwarzany przez rdze%u0144 nadnerczy: stymuluje wsp�%u0142czulny uk%u0142ad nerwowy."
+    "BACK": "Hormon wytwarzany przez rdzeń nadnerczy: stymuluje współczulny układ nerwowy."
   },
   {
     "ID": 15,
     "FRONT": "Adrenergiczny neuron",
-    "BACK": "Neuron wydzielaj%u0105cy neuroprzeka%u017Aniki: adrenalin%u0119 lub noradrenalin%u0119."
+    "BACK": "Neuron wydzielający neuroprzekaźniki: adrenalinę lub noradrenalinę."
   },
   {
     "ID": 16,
     "FRONT": "AIDS",
-    "BACK": "Zesp�%u0142 nabytego niedoboru odporno%u015B%u0107, droga zakarzenia: przez krew oraz przez kontakt p%u0142ciowy z osob%u0105 zara%u017Con%u0105."
+    "BACK": "Zespół nabytego niedoboru odporność, droga zakarzenia: przez krew oraz przez kontakt płciowy z osobą zarażoną."
   },
   {
     "ID": 17,
@@ -88,12 +89,122 @@
   {
     "ID": 18,
     "FRONT": "Akromegalia",
-    "BACK": "Choroba objawiaj%u0105ca si%u0119 m.in. przerostem ko%u0144czyn, palc�w, %u017Cuchwy, nosa. Jej przyczyn%u0105 jest nadmierne wydzielanie hormonu wzrostu przez przedni p%u0142at przysadki."
+    "BACK": "Choroba objawiająca się m.in. przerostem kończyn, palców, żuchwy, nosa. Jej przyczyną jest nadmierne wydzielanie hormonu wzrostu przez przedni płat przysadki."
   },
   {
     "ID": 19,
     "FRONT": "Reakcja akrosomowa",
-    "BACK": "Proces, w wyniku kt�rego akrosom, stuktura w postaci czapeczki w szczytowej cz%u0119%u015Bci g%u0142�wki plemnika"
+    "BACK": "Proces, w wyniku którego akrosom, stuktura w postaci czapeczki w szczytowej części główki plemnika, uwalnia enzymy proteolityczne (rozkładające białka) i przechodzi inne zmiany umożliwiające plemnikowi penetrację osłonek jajowych."
+  },
+  {
+    "ID": 20,
+    "FRONT": "Akson",
+    "BACK": "Długa wypustka neuronu przewodząca impuls nerwowy od ciałka komórkowego."
+  },
+  {
+    "ID": 21,
+    "FRONT": "Aksopodia",
+    "BACK": "Długie, cienkie wypustki cytoplazmatyczne charakterystyczne dla promienionóżek."
+  },
+  {
+    "ID": 22,
+    "FRONT": "Aktyna",
+    "BACK": "Białko budujące mikrofilamenty (filamenty aktynowe): aktyna w powiązaniu z białkiem miozyną jest odpowiedzialna z skurcze mięśni."
+  },
+  {
+    "ID": 23,
+    "FRONT": "Filamenty aktynowe",
+    "BACK": "Cienkie filamenty zbudowane głównie z białka aktyny; filamenty aktynowe i miozynowe tworzą włókienka kurczliwe (miofibryle) we włuknach mięśniowych."
+  },
+  {
+    "ID": 24,
+    "FRONT": "Energia aktywacji",
+    "BACK": "Energia kinetyczna konieczna do zainicjowania reakcji chemicznej."
+  },
+  {
+    "ID": 25,
+    "FRONT": "Białko aktywatorowe",
+    "BACK": "Białko regulatorowe, które po związaniu się z DNA indukuje transkrypcję."
+  },
+  {
+    "ID": 26,
+    "FRONT": "Centrum aktywne",
+    "BACK": "Wiąże jeden lub więcej substratów i katalizuje reakcję chemiczną."
+  },
+  {
+    "ID": 27,
+    "FRONT": "Transport aktywny",
+    "BACK": "Transport substancji przez błonę z obszaru o niższym stężeniu do obszaru o wyższym stężeniu, a więc wbrew gradientowi stężenia; energii potencjalnej zawartej w gradiencie stężenia nie można wykorzystać do tego transportu więc wymaga on dodatkowego źródła energii, zwykle w postaci ATP. (Dyfuzja ułatwiona)"
+  },
+  {
+    "ID": 28,
+    "FRONT": "Albinizm, bielactwo",
+    "BACK": "Dziedziczna niezdolnośc do wytwarzania melaniny, czego efektem jest jasne zabarwienie skóry."
+  },
+  {
+    "ID": 29,
+    "FRONT": "Albuminy",
+    "BACK": "Grupa białek występująca w większości tkanek zwierzęcych: frakcja białek osocza krwi"
+  },
+  {
+    "ID": 30,
+    "FRONT": "Aldehyd",
+    "BACK": "Związek chemiczny zawierający grypę karbonylową związaną z co najmniej jednym atomem wodoru."
+  },
+  {
+    "ID": 31,
+    "FRONT": "Aldehyd 3-fosfoglicerynowy (G3P)",
+    "BACK": "ufosforylowany trójwęglowy związek będący ważnym produktem pośrednimw glikolizie i cyklu Calvina."
+  },
+  {
+    "ID": 32,
+    "FRONT": "Aldosteron",
+    "BACK": "Hormon steroidowy wytwarzany przez korę nadnerczy: m.in. stymuluje resorpcję sodu"
+  },
+  {
+    "ID": 33,
+    "FRONT": "Alergen",
+    "BACK": "Substancja, która wywołuje reakcję alergiczną."
+  },
+  {
+    "ID": 34,
+    "FRONT": "Alergia",
+    "BACK": "Nadwrażliwość na niektóre substancje występujące w środowisku, objawiające się np. katarem,wysypką lub astmą."
+  },
+  {
+    "ID": 35,
+    "FRONT": "Alfa-helisa",
+    "BACK": "Rodzaj dugorzędowej struktury łańcucha polipeptydowego, którego helikalne zwinięcie stabilizują wiązania wodorowe  (harmonijka beta)."
+  },
+  {
+    "ID": 36,
+    "FRONT": "Allele",
+    "BACK": "Alternatywne formy genu zajmujące to samo miejsce na chromosomach homologicznych: wywołują odmienne wykształcenie tej samej cechy."
+  },
+  {
+    "ID": 41,
+    "FRONT": "Alzheimer",
+    "BACK": "Postępująca degeneracyjna choroba mózgu charakteryzująca się formowaniem w tkance mózgowej płytek amyloidowych i splotów neurofibralnych."
+  },
+  {
+    "ID": 42,
+    "FRONT": "Ameba",
+    "BACK": "Pierwotniak poruszający się za pomocą nibynóżek."
+  },
+  {
+    "ID": 43,
+    "FRONT": "Cząsteczka amfipatyczna",
+    "BACK": "Cząsteczka zawierająca część hydrofilową i hydrofobową."
+  },
+  {
+    "ID": 45,
+    "FRONT": "Amnokwas",
+    "BACK": "Związek organiczny zawierający grupę aminową;"
+  },
+  {
+    "ID": 46,
+    "FRONT": "Grupa aminowa",
+    "BACK": "Słabo zasadowa grupa funkcyjna o wzorze: NH₃"
   }
 ]
 }
