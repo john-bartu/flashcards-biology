@@ -1,96 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/FrameLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:background="@color/background"
-    android:foregroundGravity="center"
-    tools:context=".DefinitionActivity">
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/FrameLayout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:background="@color/background"
+             android:foregroundGravity="center"
+             tools:context=".DefinitionActivity">
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button_next"
-            style="@android:style/ButtonBar"
-            android:layout_width="0dp"
-            android:layout_height="72dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:foregroundGravity="center"
-            android:gravity="center"
-            android:text="Następny"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
+                android:id="@+id/button_next"
+                style="@android:style/ButtonBar"
+                android:layout_width="0dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="@string/NextFlashcard"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@color/button"
+                android:textSize="24sp"/>
     </LinearLayout>
 
 
+    <FrameLayout
+            android:id="@+id/backCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:onClick="flipCard">
+
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="352dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:src="@drawable/rectangle"
+                android:scaleX="-1"
+                android:contentDescription="@string/sticky_note"/>
 
 
-
-            <FrameLayout
-                android:id="@+id/backCard"
-                android:layout_width="wrap_content"
+        <TextView
+                android:id="@+id/textBack"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:foregroundGravity="center"
-                android:onClick="flipCard">
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="22sp" android:layout_margin="32dp"/>
+    </FrameLayout>
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="352dp"
-                    android:layout_height="400dp"
-                    android:layout_gravity="center"
-                    android:padding="16dp"
-                    android:src="@drawable/rectangle"
-                    android:tint="@color/cardBack" />
+    <FrameLayout
+            android:id="@+id/frontCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:foregroundGravity="center"
+            android:onClick="flipCard"
+    >
 
+        <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="352dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:src="@drawable/rectangle"
+                android:contentDescription="@string/sticky_note"
+        />
 
-                <TextView
-                        android:id="@+id/textBack"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="WARM"
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="22sp" android:layout_margin="32dp"/>
-            </FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/frontCard"
-                android:layout_width="wrap_content"
+        <TextView
+                android:id="@+id/textFront"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center"
-                android:foregroundGravity="center"
-                android:onClick="flipCard">
+                android:layout_gravity="center"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="22sp" android:layout_margin="32dp"/>
 
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="352dp"
-                    android:layout_height="400dp"
-                    android:layout_gravity="center"
-                    android:padding="16dp"
-                    android:src="@drawable/rectangle"
-                    android:tint="@color/cardFront" />
-
-                <TextView
-                        android:id="@+id/textFront"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="dlugi text dlugi text dlugi text dlugi text dlugi text dlugi text dlugi text dlugi text  dlugi text dlugi text dlugi text dlugi text "
-                        android:textAlignment="center"
-                        android:textColor="@color/white"
-                        android:textSize="22sp" android:layout_margin="32dp"/>
-
-            </FrameLayout>
+    </FrameLayout>
 
 </FrameLayout>

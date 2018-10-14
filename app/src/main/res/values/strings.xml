@@ -2,4 +2,6 @@
     <string name="app_name">More Than Biology</string>
     <string name="dummy_content">MORE THAN\nBIOLOGY</string>
     <string name="footer">2018</string>
+    <string name="NextFlashcard">Następny</string>
+    <string name="sticky_note">sticky note</string>
 </resources>
