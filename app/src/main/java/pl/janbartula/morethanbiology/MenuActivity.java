@@ -1,11 +1,8 @@
 package pl.janbartula.morethanbiology;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.os.Debug;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -16,23 +13,23 @@ import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 import pl.janbartula.morethanbiology.Utilities.FlashCard;
 import pl.janbartula.morethanbiology.Utilities.FlashDataset;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity
+{
 
-    FlashDataset flashDataset;
+    private FlashDataset flashDataset;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         final TextView searchedDefinition;
         final EditText searchWord;
         final TextView searchedWord;
-
 
 
         super.onCreate(savedInstanceState);
@@ -43,15 +40,16 @@ public class MenuActivity extends AppCompatActivity {
         flashDataset = new FlashDataset();
 
 
-
         Button clickButton = findViewById(R.id.defaultbutton);
         searchWord = findViewById(R.id.textSearch);
         searchedWord = findViewById(R.id.textWord);
         searchedDefinition = findViewById(R.id.textDefinition);
-        clickButton.setOnClickListener( new View.OnClickListener() {
+        clickButton.setOnClickListener(new View.OnClickListener()
+        {
 
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 LoadDefinitionActivity();
             }
         });
@@ -59,7 +57,6 @@ public class MenuActivity extends AppCompatActivity {
 
         searchedWord.setText("");
         searchedDefinition.setText("");
-
 
 
         try
@@ -70,22 +67,21 @@ public class MenuActivity extends AppCompatActivity {
             Log.i("JB", "Number of flashcards: " + flashcards.length());
 
 
-            for (int i = 0; i < flashcards.length(); i++) {
+            for (int i = 0; i < flashcards.length(); i++)
+            {
                 JSONObject c = flashcards.getJSONObject(i);
                 int id = c.getInt("ID");
                 String front = c.getString("FRONT");
                 String back = c.getString("BACK");
 
-                Log.i("JB", "Flashcard:  " + id + " | " + front +" | "+ back );
-                flashDataset.Add(new FlashCard(id,front,back));
+                Log.i("JB", "Flashcard:  " + id + " | " + front + " | " + back);
+                flashDataset.Add(new FlashCard(id, front, back));
             }
 
         } catch (JSONException e)
         {
             e.printStackTrace();
         }
-
-
 
 
         searchWord.addTextChangedListener(new TextWatcher()
@@ -102,18 +98,21 @@ public class MenuActivity extends AppCompatActivity {
 
             }
 
-            public void afterTextChanged (Editable s){
+            public void afterTextChanged(Editable s)
+            {
                 String wordToFindText = searchWord.getText().toString();
 
-                if(wordToFindText.length()>=2)
+                if (wordToFindText.length() >= 2)
                 {
                     FlashCard foundedFlash = flashDataset.Find(wordToFindText);
 
-                    if(foundedFlash!=null){
+                    if (foundedFlash != null)
+                    {
 
-                    searchedWord.setText(foundedFlash.getFront());
-                    searchedDefinition.setText(foundedFlash.getBack());}
-                    else{
+                        searchedWord.setText(foundedFlash.getFront());
+                        searchedDefinition.setText(foundedFlash.getBack());
+                    } else
+                    {
                         searchedWord.setText("Nic nie znalazłem :(");
                         searchedDefinition.setText("");
                     }
@@ -123,10 +122,11 @@ public class MenuActivity extends AppCompatActivity {
     }
 
 
-
-    public String loadJSONFromAsset(String namefile) {
+    String loadJSONFromAsset(String namefile)
+    {
         String json = null;
-        try {
+        try
+        {
             InputStream is = getAssets().open(namefile);
 
             int size = is.available();
@@ -141,7 +141,8 @@ public class MenuActivity extends AppCompatActivity {
             json = new String(buffer, "UTF-8");
 
 
-        } catch (IOException ex) {
+        } catch (IOException ex)
+        {
             ex.printStackTrace();
             return null;
         }
@@ -149,9 +150,10 @@ public class MenuActivity extends AppCompatActivity {
     }
 
 
-    public void LoadDefinitionActivity(){
-            Intent i = new Intent(MenuActivity.this, DefinitionActivity.class);
-            i.putExtra("DataBase", flashDataset);
-            startActivityForResult(i, 0);
+    void LoadDefinitionActivity()
+    {
+        Intent i = new Intent(MenuActivity.this, DefinitionActivity.class);
+        i.putExtra("DataBase", flashDataset);
+        startActivityForResult(i, 0);
     }
 }

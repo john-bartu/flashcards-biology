@@ -8,15 +8,27 @@ public class FlashCard implements Serializable
     String front;
     String back;
 
-    public FlashCard(int id, String front, String back){
+    public FlashCard(int id, String front, String back)
+    {
         this.id = id;
         this.front = front;
         this.back = back;
     }
 
-    public int getID(){return id;}
-    public String getFront(){return front;}
-    public String getBack(){return back;}
+    public int getID()
+    {
+        return id;
+    }
+
+    public String getFront()
+    {
+        return front;
+    }
+
+    public String getBack()
+    {
+        return back;
+    }
 
 
 }

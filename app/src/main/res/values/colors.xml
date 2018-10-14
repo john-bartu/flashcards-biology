@@ -5,8 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="black_overlay">#66000000</color>
 
-    <color name="cardFront"> #f1c40f</color><!-- 95a5a6 -->
-    <color name="cardBack">#f1c40f</color><!-- 7f8c8d -->
+    <color name="cardFront">#f1c40f</color>
+    <color name="cardBack">#f1c40f</color>
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>

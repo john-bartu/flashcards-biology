@@ -1,7 +1,5 @@
 package pl.janbartula.morethanbiology.Utilities;
 
-import android.text.Editable;
-
 import java.io.Serializable;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -12,32 +10,35 @@ public class FlashDataset implements Serializable
     List<FlashCard> flashCardList;
     int actualIndex;
 
-    public FlashDataset(){
+    public FlashDataset()
+    {
         flashCardList = new LinkedList<>();
     }
 
 
-    public void Add(FlashCard flashCard){
+    public void Add(FlashCard flashCard)
+    {
         flashCardList.add(flashCard);
     }
 
-    public void Shuffle(){
+    public void Shuffle()
+    {
         Collections.shuffle(flashCardList);
-        actualIndex=0;
+        actualIndex = 0;
     }
 
-    public FlashCard GetActualCard(){
+    public FlashCard GetActualCard()
+    {
         return flashCardList.get(actualIndex);
     }
 
-    public void Next(){
+    public void Next()
+    {
         actualIndex++;
     }
 
     public FlashCard Find(String text)
     {
-        FlashCard definition = new FlashCard(0, "Error", "Error");
-
 
         for (FlashCard flashcard : flashCardList
         )
@@ -50,9 +51,7 @@ public class FlashDataset implements Serializable
             }
         }
 
-
         return null;
-
     }
 
 

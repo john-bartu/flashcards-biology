@@ -4,7 +4,6 @@ import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -45,16 +44,16 @@ public class DefinitionActivity extends AppCompatActivity
 
             @Override
             public void onClick(View v) {
-                nextflash();
+                nextFlash();
             }
         });
 
         flashDataset.Shuffle();
-        refreshflash();
+        refreshFlash();
     }
 
-    private void refreshflash(){
-        FlashCard newflash = flashDataset.GetActualCard();
+    private void refreshFlash(){
+        FlashCard flashCard = flashDataset.GetActualCard();
 
         if(mIsBackVisible)
         {
@@ -63,12 +62,12 @@ public class DefinitionActivity extends AppCompatActivity
             mIsBackVisible = false;
             setUpCard();
         }
-        setUpText(newflash.getFront(),newflash.getBack());
+        setUpText(flashCard.getFront(), flashCard.getBack());
     }
 
-    private void nextflash(){
+    private void nextFlash(){
         flashDataset.Next();
-        refreshflash();
+        refreshFlash();
 
 
     }
