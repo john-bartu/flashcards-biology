@@ -2,6 +2,7 @@ package pl.janbartula.morethanbiology;
 
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -21,8 +22,9 @@ public class DefinitionActivity extends AppCompatActivity
     private View FrontSide;
     private View BackSide;
 
-    TextView frontText;
-    TextView backText;
+    private TextView frontText;
+    private TextView backText;
+    private TextView knowledgeText;
 
     private FlashDataset flashDataset;
     @Override
@@ -39,18 +41,31 @@ public class DefinitionActivity extends AppCompatActivity
 
 
 
-        Button clickButton = findViewById(R.id.button_next);
-        clickButton.setOnClickListener( new View.OnClickListener() {
+        Button buttonKnown = findViewById(R.id.button_known);
+        buttonKnown.setOnClickListener( new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+                flashDataset.ActualCardKnown();
                 nextFlash();
             }
         });
 
+        Button buttonUnknown = findViewById(R.id.button_unknown);
+        buttonUnknown.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                flashDataset.ActualCardUnknown();
+                nextFlash();
+            }
+        });
+
+
         flashDataset.Shuffle();
         refreshFlash();
     }
+
 
     private void refreshFlash(){
         FlashCard flashCard = flashDataset.GetActualCard();
@@ -63,6 +78,8 @@ public class DefinitionActivity extends AppCompatActivity
             setUpCard();
         }
         setUpText(flashCard.getFront(), flashCard.getBack());
+
+        knowledgeText.setText("Knowledge ID: [" + flashCard.getID()+ "] : " +flashDataset.GetActualKnowledge());
     }
 
     private void nextFlash(){
@@ -108,6 +125,8 @@ public class DefinitionActivity extends AppCompatActivity
 
         frontText = findViewById(R.id.textFront);
         backText = findViewById(R.id.textBack);
+
+        knowledgeText = findViewById(R.id.textKnownledge);
     }
 
     public void flipCard(View view)

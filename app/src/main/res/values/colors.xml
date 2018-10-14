@@ -11,8 +11,8 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="background">#FFFFFF</color>
-    <color name="colorCorrect">#E62401</color>
-    <color name="colorWrong">#6AC341</color>
+    <color name="colorCorrect">#6AC341</color>
+    <color name="colorWrong">#E62401</color>
     <color name="mainmenutext">#95a5a6</color>
     <color name="button">#95a5a6</color>
 </resources>

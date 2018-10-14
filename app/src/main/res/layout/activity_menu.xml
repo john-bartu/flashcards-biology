@@ -1,52 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/FrameLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    tools:context=".MenuActivity"
-     android:descendantFocusability="beforeDescendants"
-     android:focusableInTouchMode="true">
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/FrameLayout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/colorPrimaryDark"
+             tools:context=".MenuActivity"
+             android:descendantFocusability="beforeDescendants"
+             android:focusableInTouchMode="true">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
 
         <TextView
-            android:id="@+id/text_header"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:keepScreenOn="true"
-            android:text="@string/dummy_content"
-            android:textColor="@color/mainmenutext"
-            android:textSize="50sp"
-            android:textStyle="bold" />
+                android:id="@+id/text_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:text="@string/dummy_content"
+                android:textColor="@color/mainmenutext"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
 
         <Space
                 android:layout_width="match_parent"
-                android:layout_weight="0" android:layout_height="0dp"/>
+                android:layout_weight="0" android:layout_height="8dp"/>
 
+        <Button
+                android:text="Begin Learning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/defaultbutton"
+                android:background="@color/mainmenutext"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_weight="0" android:layout_height="8dp"/>
         <ScrollView
-            android:id="@+id/scrollview"
-            android:layout_width="match_parent"
-            android:layout_height="156dp">
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="242dp">
 
             <LinearLayout
-                android:id="@+id/buttonsholder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:orientation="vertical" >
-                <Button
-                        android:text="Default Dataset"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/defaultbutton"
-                        android:background="@color/mainmenutext"/>
+                    android:id="@+id/buttonsholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
                 <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
@@ -60,31 +63,34 @@
                             android:background="@color/background" android:padding="4dp"
                             android:hint="Type text to find..."/>
                 </android.support.design.widget.TextInputLayout>
-                <TextView
-                        android:id="@+id/text_footer"
+                <Space
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom"
-                        android:text="@string/footer"
-                        android:textAlignment="center"
-                        android:textColor="@color/mainmenutext"
-                        android:textSize="25sp"/>
+                        android:layout_weight="1" android:layout_height="8dp"/>
+                <TextView
+                        android:text="Word"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textWord"
+                        android:padding="8dp" android:layout_height="48dp" android:textSize="14sp"
+                        android:textStyle="bold" android:background="#99a8a8" android:gravity="center_vertical"/>
+                <TextView
+                        android:text="Definition"
+                        android:layout_width="match_parent"
+                        android:id="@+id/textDefinition"
+                        android:padding="8dp" android:layout_height="wrap_content" android:textSize="18sp"
+                        android:gravity="center" android:background="#9aa7a8"/>
             </LinearLayout>
         </ScrollView>
-        <TextView
-                android:text="Word"
-                android:layout_width="match_parent"
-                android:id="@+id/textWord"
-                android:padding="8dp" android:layout_height="32dp" android:textSize="14sp"
-                android:textStyle="bold" android:background="#99a8a8"/>
-        <TextView
-                android:text="Definition"
-                android:layout_width="match_parent"
-                android:id="@+id/textDefinition"
-                android:padding="8dp" android:layout_height="128dp" android:textSize="18sp"
-                android:gravity="center" android:background="#9aa7a8"/>
 
     </LinearLayout>
+    <TextView
+            android:id="@+id/text_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="@string/footer"
+            android:textAlignment="center"
+            android:textColor="@color/mainmenutext"
+            android:textSize="25sp"/>
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->

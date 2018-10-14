@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import io.realm.Realm;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,6 +28,11 @@ public class MenuActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+
+
+        Realm.init(this.getApplicationContext());
+
+
         final TextView searchedDefinition;
         final EditText searchWord;
         final TextView searchedWord;
@@ -41,6 +47,7 @@ public class MenuActivity extends AppCompatActivity
 
 
         Button clickButton = findViewById(R.id.defaultbutton);
+
         searchWord = findViewById(R.id.textSearch);
         searchedWord = findViewById(R.id.textWord);
         searchedDefinition = findViewById(R.id.textDefinition);
@@ -113,7 +120,7 @@ public class MenuActivity extends AppCompatActivity
                         searchedDefinition.setText(foundedFlash.getBack());
                     } else
                     {
-                        searchedWord.setText("Nic nie znalazłem :(");
+                        searchedWord.setText(R.string.nothing_found);
                         searchedDefinition.setText("");
                     }
                 }
@@ -122,9 +129,9 @@ public class MenuActivity extends AppCompatActivity
     }
 
 
-    String loadJSONFromAsset(String namefile)
+    private String loadJSONFromAsset(String namefile)
     {
-        String json = null;
+        String json;
         try
         {
             InputStream is = getAssets().open(namefile);
@@ -150,7 +157,7 @@ public class MenuActivity extends AppCompatActivity
     }
 
 
-    void LoadDefinitionActivity()
+    private void LoadDefinitionActivity()
     {
         Intent i = new Intent(MenuActivity.this, DefinitionActivity.class);
         i.putExtra("DataBase", flashDataset);

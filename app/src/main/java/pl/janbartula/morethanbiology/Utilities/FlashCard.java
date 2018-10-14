@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public class FlashCard implements Serializable
 {
-    int id;
-    String front;
-    String back;
+    private int id;
+    private String front;
+    private String back;
 
     public FlashCard(int id, String front, String back)
     {
@@ -29,6 +29,5 @@ public class FlashCard implements Serializable
     {
         return back;
     }
-
 
 }

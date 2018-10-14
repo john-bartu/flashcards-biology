@@ -4,4 +4,7 @@
     <string name="footer">2018</string>
     <string name="NextFlashcard">Następny</string>
     <string name="sticky_note">sticky note</string>
+    <string name="nothing_found">Nic nie znalazłem :("</string>
+    <string name="known">Known</string>
+    <string name="unknown">Unknown</string>
 </resources>
