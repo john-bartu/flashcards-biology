@@ -1,5 +1,7 @@
 package pl.janbartula.morethanbiology.Utilities;
 
+import android.text.Editable;
+
 import java.io.Serializable;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -31,5 +33,27 @@ public class FlashDataset implements Serializable
     public void Next(){
         actualIndex++;
     }
+
+    public FlashCard Find(String text)
+    {
+        FlashCard definition = new FlashCard(0, "Error", "Error");
+
+
+        for (FlashCard flashcard : flashCardList
+        )
+        {
+            String word = flashcard.front.toLowerCase();
+
+            if (word.contains(text.toLowerCase()))
+            {
+                return flashcard;
+            }
+        }
+
+
+        return null;
+
+    }
+
 
 }

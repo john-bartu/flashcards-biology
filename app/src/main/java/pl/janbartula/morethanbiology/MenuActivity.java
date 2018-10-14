@@ -6,12 +6,17 @@ import android.content.Intent;
 import android.os.Debug;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 import pl.janbartula.morethanbiology.Utilities.FlashCard;
 import pl.janbartula.morethanbiology.Utilities.FlashDataset;
 
@@ -21,14 +26,41 @@ import java.io.InputStream;
 public class MenuActivity extends AppCompatActivity {
 
     FlashDataset flashDataset;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        final TextView searchedDefinition;
+        final EditText searchWord;
+        final TextView searchedWord;
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
         Log.i("JB", "Activity loaded");
 
         flashDataset = new FlashDataset();
+
+
+
+        Button clickButton = findViewById(R.id.defaultbutton);
+        searchWord = findViewById(R.id.textSearch);
+        searchedWord = findViewById(R.id.textWord);
+        searchedDefinition = findViewById(R.id.textDefinition);
+        clickButton.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                LoadDefinitionActivity();
+            }
+        });
+
+
+        searchedWord.setText("");
+        searchedDefinition.setText("");
+
+
 
         try
         {
@@ -53,16 +85,41 @@ public class MenuActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        Button clickButton = findViewById(R.id.defaultbutton);
-        clickButton.setOnClickListener( new View.OnClickListener() {
+
+
+
+        searchWord.addTextChangedListener(new TextWatcher()
+        {
 
             @Override
-            public void onClick(View v) {
-                LoadDefinitionActivity();
+            public void beforeTextChanged(CharSequence s, int start, int count, int after)
+            {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count)
+            {
+
+            }
+
+            public void afterTextChanged (Editable s){
+                String wordToFindText = searchWord.getText().toString();
+
+                if(wordToFindText.length()>=2)
+                {
+                    FlashCard foundedFlash = flashDataset.Find(wordToFindText);
+
+                    if(foundedFlash!=null){
+
+                    searchedWord.setText(foundedFlash.getFront());
+                    searchedDefinition.setText(foundedFlash.getBack());}
+                    else{
+                        searchedWord.setText("Nic nie znalazłem :(");
+                        searchedDefinition.setText("");
+                    }
+                }
             }
         });
-
-
     }
 
 

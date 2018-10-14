@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#85F5AF</color>
-    <color name="colorPrimaryDark">#85F5AF</color>
+    <color name="colorPrimary">#95a5a6</color>
+    <color name="colorPrimaryDark">#2c3e50</color>
     <color name="colorAccent">#FF4081</color>
     <color name="black_overlay">#66000000</color>
 
-    <color name="cardFront">#7B7B7B</color>
-    <color name="cardBack">#636363</color>
+    <color name="cardFront"> #f1c40f</color><!-- 95a5a6 -->
+    <color name="cardBack">#f1c40f</color><!-- 7f8c8d -->
 
     <color name="white">#FFFFFF</color>
-    <color name="background">#000000</color>
+    <color name="black">#000000</color>
+    <color name="background">#FFFFFF</color>
     <color name="colorCorrect">#E62401</color>
     <color name="colorWrong">#6AC341</color>
-    <color name="mainmenutext">#00cc4c</color>
+    <color name="mainmenutext">#95a5a6</color>
+    <color name="button">#95a5a6</color>
 </resources>
